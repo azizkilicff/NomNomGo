@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NomNomGo | Order Your Favorite Meals</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <link rel="stylesheet" href="../home-page/style.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header>
+    <nav class="navbar">
+      <a href="#" class="nav-logo">
+        <h2 class="logo-text">🍔 NomNomGo</h2>
+      </a>
+      <ul class="nav-menu">
+        <button id="menu-close-button" class="fas fa-times"></button>
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li> 
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="../login-register/login.html" class="nav-link login-btn">Login / Sign Up</a></li>
+      </ul>
+      <button id="menu-open-button" class="fas fa-bars"></button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="section-content">
+        <div class="hero-details">
+          <h2 class="title">Delicious Food, Delivered Fast</h2>
+          <h3 class="subtitle">Order Your Favorite Meals with Ease</h3>
+          <p class="description">
+            Enjoy a seamless and convenient way to browse menus, customize meals, and get your food delivered on time!
+          </p>
+          <div class="buttons">
+            <a href="#menu" class="button order-now">View Menu</a>
+            <a href="../login-register/login.html" class="button login-btn">Get Started</a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <img src="../images/delicious.jpg" alt="Delicious Food" class="hero-image" loading="lazy"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="section-content">
+        <div class="about-image-wrapper">
+          <img src="../images/about-us.jpg" alt="About NomNomGo" class="about-image" />
+        </div>
+        <div class="about-details">
+          <h2 class="section-title">About Us</h2>
+          <p class="text">
+            NomNomGo is your go-to online meal ordering system, making food ordering easier for both customers and restaurants.
+            Our goal is to reduce order errors, streamline restaurant operations, and offer a better dining experience.
+          </p>
+        </div>
+      </div>
+    </section>
+
+<!-- Menu Section -->
+<section class="menu-section" id="menu">
+  <h2 class="section-title">Our Menu</h2>
+  <div class="section-content">
+    <div class="swiper menu-swiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1: Meal Item -->
+        <div class="swiper-slide menu-item">
+          <img src="../images/burger.jpg" alt="Classic Cheeseburger" class="menu-image" />
+          <div class="menu-details">
+            <h3 class="name">Classic Cheeseburger</h3>
+            <p class="text">Juicy beef patty, cheddar cheese, and fresh veggies.</p>
+          </div>
+        </div>
+        <!-- Slide 2: Meal Item -->
+        <div class="swiper-slide menu-item">
+          <img src="../images/pizza.jpg" alt="Margherita Pizza" class="menu-image" />
+          <div class="menu-details">
+            <h3 class="name">Margherita Pizza</h3>
+            <p class="text">Authentic Italian pizza with fresh basil & mozzarella.</p>
+          </div>
+        </div>
+        <!-- Slide 3: Meal Item -->
+        <div class="swiper-slide menu-item">
+          <img src="../images/sushi.webp" alt="Sushi Platter" class="menu-image" />
+          <div class="menu-details">
+            <h3 class="name">Sushi Platter</h3>
+            <p class="text">Fresh sushi rolls with soy sauce and wasabi.</p>
+          </div>
+        </div>
+        <!-- Slide 4: Meal Item -->
+        <div class="swiper-slide menu-item">
+          <img src="../images/salad.jpg" alt="Garden Salad" class="menu-image" />
+          <div class="menu-details">
+            <h3 class="name">Garden Salad</h3>
+            <p class="text">Fresh greens with a light vinaigrette dressing.</p>
+          </div>
+        </div>
+        <!-- Slide 5: Meal Item -->
+        <div class="swiper-slide menu-item">
+          <img src="../images/pasta.webp" alt="Pasta Delight" class="menu-image" />
+          <div class="menu-details">
+            <h3 class="name">Pasta Delight</h3>
+            <p class="text">Delicious pasta in a rich tomato sauce.</p>
+          </div>
+        </div>
+        <!-- Slide 6: Call to Action (Button) -->
+        <div class="swiper-slide menu-item call-to-action">
+          <div class="menu-details">
+            <h3 class="name">Sign In to See More</h3>
+            <p class="text">Create an account or sign in to explore our full menu.</p>
+            <button class="button login-btn" onclick="window.location.href='../login-register/login.html'">
+              Sign In
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Optional: Pagination and Navigation -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</section>
+
+  
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="section-content">
+        <ul class="contact-info-list">
+          <li class="contact-info">
+            <i class="fa-solid fa-location-crosshairs"></i>
+            <p>University, Mississippi</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-regular fa-envelope"></i>
+            <p>support@nomnomgo.com</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-solid fa-phone"></i>
+            <p>(xxx) xxx-xxxx</p>
+          </li>
+        </ul>
+        <form action="#" class="contact-form">
+          <input type="text" placeholder="Your Name" class="form-input" required />
+          <input type="email" placeholder="Your Email" class="form-input" required />
+          <textarea placeholder="Your Message" class="form-input" required></textarea>
+          <button type="submit" class="button submit-button">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <div class="section-content">
+      <p class="copyright-text">© 2025 NomNomGo. All Rights Reserved.</p>
+      <div class="social-link-list">
+        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom Script -->
+  <script src="../home-page/script.js"></script>
+</body>
+</html>
