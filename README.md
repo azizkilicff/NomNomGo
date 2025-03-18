@@ -14,7 +14,7 @@ NomNomGo is an **online meal ordering system** designed to make food ordering ea
 - **Version 3:** UI improvements, customer rewards, order history, and discount codes.  
 
 ## 🏗️ **Project Status**  
-- Currently, we have a **basic login page, home page and integrated datebase system that can store the created users** set up. These can be changed anytime.  
+- Currently, we have a **basic login page, home page and integrated datebase system that can store the created users**. These can be changed anytime.  
 
 ## 👥 **Team Members**   
 - **Daniel White**
